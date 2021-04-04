@@ -18,7 +18,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Built from parts availiable at the hardware store',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/plane_logo2.png',
     description: (
       <>
         The core frame is designed with parts that are available in the hardware store. The basic material used is XPS, aluminum, hot glue and partly wood.
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: 'Autopilot',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/ardupilot.png',
     description: (
       <>
         The central computing unit consists of a Raspberry pi and a Navio2 with ardupilot and ROS. This controls both the waypoint mission and eventually the automated landing on water.
@@ -67,10 +67,12 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero hero--primary', styles.heroBanner)} >
+
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+
           <div className={styles.buttons}>
             <Link
               className={clsx(
@@ -101,6 +103,6 @@ export default function Home() {
           </section>
         )}
       </main>
-    </Layout>
+    </Layout >
   );
 }

@@ -6,23 +6,23 @@
  *
  * @format
  */
-
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Project Duck',
   tagline: 'Something between a technical, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.',
   url: 'https://your-docusaurus-test-site.com',
+  //src: "img/duck_logo.png",
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ArzelaAscoIi', // Usually your GitHub org/user name.
+  projectName: 'UAVDocs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Duck',
       logo: {
-        alt: 'My Facebook Project Logo',
+        alt: 'Duck logo',
         src: 'img/duck_logo.png',
       },
       items: [
@@ -110,13 +110,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/ArzelaAscoIi/UAVDocs/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/ArzelaAscoIi/UAVDocs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

@@ -9,7 +9,8 @@
 
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Built: ['core', 'gear', 'drive'],
+    Ardupilot: ['doc3'],
+    Solar: ['doc3'],
   },
 };
