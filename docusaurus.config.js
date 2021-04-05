@@ -27,7 +27,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: '/docs',
           activeBasePath: 'docs',
           label: 'Duck',
           position: 'left',

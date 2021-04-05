@@ -1,0 +1,37 @@
+---
+id: drive
+title: Drive
+sidebar_label: Drive
+slug: /drive
+---
+And again here: I have done some stupid things. 
+
+When I started building about 3 years ago, the plan was to mount the motor at the front of the plane. A landing gear was not mounted at that time, so the rotor could not rotate freely when lying down. If you tried to land in this setup, it would inevitably cause the rotor to break or the front of the airplane to break. Of course, this is exactly what happened during the first test flight. 
+There was another problem: The weight of the plane was not correct. It was too heavy in the back. The lipo could be stored very far forward, which solved the problem a bit. However, to allow for a higher payload in the long run, another solution was needed. 
+
+## The engine made of XPS
+I wanted to move the center of gravity forward and the engine higher so that the propeller could no longer touch the ground. 
+So I built an engine, which I wanted to simply mount on the plane. Actually, two (one on each wing) would have been cooler, but I only had one engine.
+
+So I started to build a frame out of XPS, which was also pretty stable. However, it turns out that it is not a good idea to use screws to attach the motor to the XPS (see picture).
+
+
+
+import drive_wrong from '@site/static/img/drive_wrong.jpg';
+import drive_wrong_mounted from '@site/static/img/drive_wrong_mounted.jpg';
+
+
+<div>
+<img src={drive_wrong} alt="Image alt"  height="500px"/>
+<img src={drive_wrong_mounted} alt="Image alt"  height="500px"/>
+</div>
+
+I simply attached the engine to the top of the plane with a couple of wooden dowels and hot glue. So that I can change the engine I just put the engine on top and fixed it with rubber bands. A test flight was to follow. During takeoff it became immediately apparent that the engine was simply no good. Sooner or later the vibration would destroy the XPS and it would come loose. 
+Back to the drawing board...
+
+## Back to the old solution
+I have learned my lesson. The vibration of the motor is not compatible with foam. I have to find a solution to fix the motor safely and to construct a connection to the airplane that allows vibrations or possibly even dampens them. I didn't want to use screws or glue, so I cut a rectangular piece out of an aluminum plate and bent the two ends 90 degrees. I attached the motor to this plate and pushed back a small strip at all ends. The plate including the motor could be attached to the plane with rubber bands.
+
+![Elevator](/img/drive_correct.jpg)
+
+A test flight showed that although there are still vibrations that are transmitted to the entire aircraft, the engine is secure.

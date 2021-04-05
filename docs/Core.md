@@ -2,7 +2,7 @@
 id: core
 title: Core
 sidebar_label: Core
-slug: /core
+slug: /
 ---
 
 This chapter deals with the construction of the core of the aircraft and will include the materials used as well as the construction of the wings and tail surfaces.
@@ -16,13 +16,65 @@ The core of the aircraft consists of
 5. wire,
 6. tape.
 
-The core of the aircraft, i.e. the fuselage, wings, rudders and tail units, are largely made of [XPS](https://de.wikipedia.org/wiki/Polystyrol#Extrudiertes%20Polystyrol). This material should ensure sufficient stability. At the same time, the weight of the panels is very low. I used hot glue and standard wooden skewers to glue the cut elements together. However, care must be taken that the hot glue can melt the xps panels if the temperature is too high.
-
+The core of the aircraft, i.e. the fuselage, wings, rudders and tail units, are largely made of [XPS](https://de.wikipedia.org/wiki/Polystyrol#Extrudiertes%20Polystyrol). This material should ensure sufficient stability. At the same time, the weight of the panels is very low.
+In addition to the pure XPS, I laminated the outward-facing side with standard adhesive tape. This creates additional stability of the aircraft. After a few attempts to foil the already installed parts, I decided to foil the entire panels before I cut out the shapes, because it is much cleaner to work that way. 
+I used hot glue and standard wooden skewers to glue the cut elements together. However, care must be taken that the hot glue can melt the xps panels if the temperature is too high.
 
 ## Parts and Layout
 The fuselage and the tail unit I have built almost only by feel. The shape of the wings, however, must be well planned, since they provide the lift and are therefore almost the most important part of the body shell. 
 ![Basic Built](/img/layout.jpg)
 
+### Fuselage
+To build the fuselage, I cut out the three middle elements from XPS. Since my panels were only one meter long, I had to glue two panels together. For this I used hot glue and wooden sticks again. on both sides of the fuselage I cut out a 2 cm square about 50 cm from the nose. This hole should later serve as an attachment for a wooden rod that connects the wings to the fuselage. 
 
-![Basic Built](/img/basic_built.jpg)
+However, the raw material wood turns out not to be a good choice, since the elasticity of the wood is much too great. As soon as the airplane is pulled upward, the wings bend upward and offer the air a much larger attack surface. Instead of a smooth climb, the plane simply bounces up and down as you use the elevator.
 
+A square aluminum rod solves this problem, but also weighs significantly more. In the following picture you can see the new aluminium rod and the old wooden connection. 
+If would start over today i would not use any wooden rod for stabilization.
+![Basic Built](/img/alu.jpg)
+
+
+On the top of the fuselage I decided to use more flaps than less. Probably a lot of hardware still had to be installed: Navio2, RaspberryPi, receiver, Lipo, GPS, charge controller, FPV, etc. I simply cut the plates to fit, cut the flaps and connected them with tape on one side. On the other side, I simply used rubber bands and wooden sticks for fastening. 
+
+![Basic Built](/img/upper_fuselage.jpg)
+
+
+### Wings
+I used [this](https://www.youtube.com/watch?v=h_RzXO5u3M0) youtube video to build the wings. However, I built them much larger because I intend to have a higher payload. I decided on a width of 30 cm and a correspondingly larger width of the top of the wing.
+
+I just trimmed the dotted lines slightly and removed some material, creating a rounded shape when folding the wings. 
+The shape of the wing should be visible in the next picture. I have inserted a 2.5 cm wide XPS strut contrary to the Youtube video.
+![WIng](/img/wing.jpg)
+
+The connection between fuselage and wings was provided by an aluminum rod that went through almost the entire length of the wings. Since the rod filled the entire height of the wings, I made holes in the wings from above with a small screwdriver and filled them with plenty of hot glue. You have to be careful here that you make the hole exactly above the rod. You can tell that you have made the right hole by the scratching of the screwdriver on the aluminum. After about 5 holes per wing, the wings were fixed. Another layer of tape smoothed out any unevenness caused by the hot glue.
+
+I simply cut the flaps diagonally on one side and taped them in place. To make the rudders moveable by servos, I cut a cable tie in two parts. About 2,5cm and 1,5cm. The longer piece I have provided at the upper end with a small och for the control wire. I cut the rudder about 20cm from the fuselage in parallel, applied hot glue and glued the two pieces of cable tie in a triangle shape. About 15cm away from the wing I cut a 1x2,5 cm wide hole for the servo. As connection I simply took a wire and led it through a small plastic tube, so that also force can be exerted when pressing the rudder.
+
+![Basic Built](/img/flaps_roll.jpg)
+
+### Tail
+
+I simply built the tail unit from two plates. One in the shape of a trapezoid and one in a triangle with the tip cut off. 
+![Basic Built](/img/tail_top.jpg)
+
+The elevator works in the same way as the rudder. 
+
+![Upper Yaw](/img/back3.jpg)
+![Yaw](/img/back1.jpg)
+
+The yaw I constructed with a wooden stick and loops of wire, so that I have a symmetrical construction.
+![Elevator](/img/back2.jpg)
+I rounded off the edges that point in the direction of flight with a wooden stick and hot glue.
+
+
+
+## Construction priciples 
+I used a few techniques over and over again during the build, all of which are actually very simple, but turned out to be quite efficient. 
+
+### Hot glue and wooden sticks as stabilizers 
+As soon as the XPS panels are glued to the fuselage, for example, they already provide a high degree of stability. Transverse forces are compensated well due to the right-angled gluing of the panels. However, torsion is very poorly compensated. i formed an X out of the wooden rods and pierced them through the outer skin. With hot glue, both as a connection between the wood and the XPS, as well as the two rods themselves, the stability can be significantly increased. 
+![Elevator](/img/cross.jpg)
+I simply added such struts until sufficient stability was achieved. Everything, however, always according to feeling. Probably far fewer struts will suffice. 
+
+### Laminating the xps panels
+I originally started by installing the panels first and then foiling the resulting shape. However, it is much easier to glue the entire plate. Especially when building the wings, it is much easier to form the correct shape when the tape provides additional stability. (As long as you don't accidentally cut the tape).
