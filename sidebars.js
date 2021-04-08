@@ -10,7 +10,7 @@
 module.exports = {
   someSidebar: {
     Built: ['core', 'gear', 'drive'],
-    Tech: ['techhw', 'mdx'],
+    Tech: ['techhw', 'techconfig'],
     Solar: [],
   },
 };

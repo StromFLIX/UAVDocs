@@ -1,0 +1,55 @@
+---
+id: techconfig
+title: Configuration
+---
+
+
+## Remote Controll
+Nachdem alles hoffentlich richtig verkabelt und das Navio2 erfolgreich aufgesetzt war, musste die remote controll richtig konfiguriert werden. 
+Wenn man sich allerdings an die Anleitung von emlid hält, waren in meinem Fall bereits die Servos richtig konfiguriert. 
+Da ich einen weiteren Servo für das landig gear verwendet habe, musste ich einen weiteren Ausgang, basierend auf dem `YAW` channel definieren. 
+Hier habe ich den siebten ausgang des Navios genutzt.
+
+## Sensors
+Damit der Kompass und die Stromversorgung aufgezeichnet und von Ardupilot genutzt werden können, müssen diese konfiguriert werden. 
+Beim konfigurieren des Kompasses, muss das Flugzeug geschwenkt werden. Eine Anleitung findet man [hier](https://docs.emlid.com/navio2/ardupilot/tips/#voltage-and-current-sensing)
+Der Volt und Current sensor muss ebenfalls konfiguriert werden. Die Anleitung befindet sich [hier](https://docs.emlid.com/navio2/ardupilot/tips/#voltage-and-current-sensing) 
+Das Accelerometer lässt sich äquivalent zum Kompass konfigurieren. 
+
+## Flight modes
+Es gibt einige [Flugmodi, die unterschiedlichsten Charakteristiken haben](https://ardupilot.org/plane/docs/flight-modes.html). Da mein Steuer skills jedoch recht beschränkt sind und ich mich nicht darauf verlassen möchte, habe ich folgende drei Modi ausgewählt: `STABILIZE`, `FBWA` und `Guided`.
+
+| Mode   |      Roll      |  Pitch | Throttle | GPS | Need TX | Summary |
+|----------|:-------------:|------:|:-------------:|------:|------:|------:|
+|... |
+| STABILIZE | + | + |  - |   |  Y | Wing-leveling on stick release |
+| FBWA | s | s |  - |   |  Y | Wing-leveling on stick release |
+| GUIDED | A | A |  A | Y  |   | Wing-leveling on stick release |
+|...|
+
+| Symbol	 | Definition |
+|------:|------:|
+|- |	Full manual control of flight surfaces |
+| +|	Manual control with stabilized limits or assistance|
+|s |	Stabilized control with limits|
+|A |	Automatic control|
+
+Ich war mir nicht genau sicher ob der `STABILIZE` bereits ausreicht für mich oder ich direkt `FBWA` nutzen sollte. Ich entschied mich für `STABILIZE` um einerseits die Sicherheit 
+zu haben, bei fehlern durch Ardupilot gerettet zu werden und andererseits bei fehlkonfigurationen eingreifen zu können. Der Testflug hat allerdings gezeigt, dass ich lieber  `MANUAL` hätte wählen sollen. 
+
+## Testflug
+Flight Mode: `STABILIZE`
+RC connected : done 
+Compass calibrated: done 
+GPS: 6 Satelites
+Telemetry: >95%
+Wind: A little too much, but I can not wait for less
+
+Der vortrieb vom Motor reicht definitif für den Start aus und beschleunigt das Flugzeug ausreichend. Nachdem ich leicht das Höhenruder betätigt habe, stieg die Ente fast Senkrecht nach oben. Eine Korrektur durch Betätigen des Höhenruders führt fast zu einem Sturzflug. Das ganze begann danach von Vorn, bis ich es endlich geschafft hatte das Flugzeug in einer Halben, das Fahrwerk zerstörenden, Bruchlandung zu Boden brachte. 
+
+### Fehlersuche 
+Es war ziemlich offensichtlich und ich, habe auch schon vorher einmal gesehen, dass das Höhenruder vermutlich nicht ganz richtig funktioniert. 
+Wenn man das Flugzeug im stabiliserten Modus nach hinten neigt, wird das höhenruder in die Falsche richtug korrigiert und anstelle die Nase wiederum abzusenken, wird nur noch stärker hoch gezogen. Dadurch entstand der Parabelflug. Die RC controll war allerdings richtig configurert. 
+
+### Lösung
+Ich habe einfach sowohl Throttle als auch den PWM output invertiert, wodurch der regler nun richtig gegensteuert.

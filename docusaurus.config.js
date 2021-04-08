@@ -29,10 +29,10 @@ module.exports = {
         {
           to: '/docs',
           activeBasePath: 'docs',
-          label: 'Duck',
+          label: 'Docs',
           position: 'left',
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        //{ to: 'blog', label: 'Blog', position: 'left' },
         { to: 'aboutme', label: 'About Me', position: 'left' },
         // Please keep GitHub link to the right for consistency.
         {
