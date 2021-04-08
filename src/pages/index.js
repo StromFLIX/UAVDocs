@@ -18,7 +18,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Built from parts availiable at the hardware store',
-    imageUrl: 'img/plane_logo2.png',
+    imageUrl: 'img/grafic_built.png',
     description: (
       <>
         The core frame is designed with parts that are available in the hardware store. The basic material used is XPS, aluminum, hot glue and partly wood.
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: 'Autopilot',
-    imageUrl: 'img/ardupilot.png',
+    imageUrl: 'img/grafic_autonomous.png',
     description: (
       <>
         The central computing unit consists of a Raspberry pi and a Navio2 with ardupilot and ROS. This controls both the waypoint mission and eventually the automated landing on water.
@@ -36,7 +36,7 @@ const features = [
   },
   {
     title: 'Solar powered (upcoming)',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/grafic_solar.png',
     description: (
       <>
         The flight time is maximized by solar cells on the wings, which charge the duck's batteries both when resting on the lake and in the air.

@@ -5,6 +5,13 @@ sidebar_label: Core
 slug: /
 ---
 
+
+import panorama_plane from '@site/static/img/panorama_plane_cropped.jpg';
+
+<div>
+<img src={panorama_plane} alt="Image alt"  />
+</div>
+
 This chapter deals with the construction of the core of the aircraft and will include the materials used as well as the construction of the wings and tail surfaces.
 
 ## Material
@@ -31,12 +38,20 @@ However, the raw material wood turns out not to be a good choice, since the elas
 
 A square aluminum rod solves this problem, but also weighs significantly more. In the following picture you can see the new aluminium rod and the old wooden connection. 
 If would start over today i would not use any wooden rod for stabilization.
-![Basic Built](/img/alu.jpg)
 
+import alu from '@site/static/img/alu.jpg';
+
+<div align="center">
+<img src={alu} alt="Image alt" height="600px"  />
+</div>
 
 On the top of the fuselage I decided to use more flaps than less. Probably a lot of hardware still had to be installed: Navio2, RaspberryPi, receiver, Lipo, GPS, charge controller, FPV, etc. I simply cut the plates to fit, cut the flaps and connected them with tape on one side. On the other side, I simply used rubber bands and wooden sticks for fastening. 
 
-![Basic Built](/img/upper_fuselage.jpg)
+import upper_fuselage from '@site/static/img/upper_fuselage.jpg';
+
+<div align="center">
+<img src={upper_fuselage} alt="Image alt" height="600px"  />
+</div>
 
 
 ### Wings
@@ -50,20 +65,40 @@ The connection between fuselage and wings was provided by an aluminum rod that w
 
 I simply cut the flaps diagonally on one side and taped them in place. To make the rudders moveable by servos, I cut a cable tie in two parts. About 2,5cm and 1,5cm. The longer piece I have provided at the upper end with a small och for the control wire. I cut the rudder about 20cm from the fuselage in parallel, applied hot glue and glued the two pieces of cable tie in a triangle shape. About 15cm away from the wing I cut a 1x2,5 cm wide hole for the servo. As connection I simply took a wire and led it through a small plastic tube, so that also force can be exerted when pressing the rudder.
 
-![Basic Built](/img/flaps_roll.jpg)
+import flaps_roll from '@site/static/img/flaps_roll.jpg';
+
+<div align="center">
+<img src={flaps_roll} alt="Image alt" height="600px"  />
+</div>
 
 ### Tail
 
 I simply built the tail unit from two plates. One in the shape of a trapezoid and one in a triangle with the tip cut off. 
-![Basic Built](/img/tail_top.jpg)
+
+import tail_top from '@site/static/img/tail_top.jpg';
+
+<div align="center" >
+<img src={tail_top} alt="Image alt" height="600px"  />
+</div>
+
 
 The elevator works in the same way as the rudder. 
 
-![Upper Yaw](/img/back3.jpg)
-![Yaw](/img/back1.jpg)
+import back3 from '@site/static/img/back3.jpg';
+import back1 from '@site/static/img/back1.jpg';
+import back2 from '@site/static/img/back2.jpg';
+
+<div align="center">
+<img src={back3} alt="Image alt" height="600px"  />
+<img src={back1} alt="Image alt" height="600px"  />
+</div>
 
 The yaw I constructed with a wooden stick and loops of wire, so that I have a symmetrical construction.
-![Elevator](/img/back2.jpg)
+
+<div align="center">
+<img src={back2} alt="Image alt" height="600px"  />
+</div>
+
 I rounded off the edges that point in the direction of flight with a wooden stick and hot glue.
 
 
@@ -73,7 +108,13 @@ I used a few techniques over and over again during the build, all of which are a
 
 ### Hot glue and wooden sticks as stabilizers 
 As soon as the XPS panels are glued to the fuselage, for example, they already provide a high degree of stability. Transverse forces are compensated well due to the right-angled gluing of the panels. However, torsion is very poorly compensated. i formed an X out of the wooden rods and pierced them through the outer skin. With hot glue, both as a connection between the wood and the XPS, as well as the two rods themselves, the stability can be significantly increased. 
-![Elevator](/img/cross.jpg)
+
+import cross from '@site/static/img/cross.jpg';
+
+<div align="center">
+<img src={cross} alt="Image alt" height="600px"  />
+</div>
+
 I simply added such struts until sufficient stability was achieved. Everything, however, always according to feeling. Probably far fewer struts will suffice. 
 
 ### Laminating the xps panels
