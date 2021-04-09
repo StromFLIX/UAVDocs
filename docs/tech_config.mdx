@@ -1,0 +1,57 @@
+---
+id: techconfig
+title: Configuration
+---
+
+
+## Remote Controll
+After everything was hopefully wired correctly and the Navio2 was successfully set up, the remote control had to be configured correctly. 
+However, if you follow emlid's instructions, in my case the servos were already configured correctly. 
+Since I used another servo for the landig gear, I had to define another output based on the `YAW` channel. 
+Here I used the seventh output of the Navio.
+
+## Sensors
+In order for the compass and power supply to be recorded and used by Ardupilot, they must be configured. 
+When configuring the compass, the aircraft must be slewed. Instructions can be found [here](https://docs.emlid.com/navio2/ardupilot/tips/#voltage-and-current-sensing).
+The Volt and Current sensor must also be configured. The instructions can be found [here](https://docs.emlid.com/navio2/ardupilot/tips/#voltage-and-current-sensing). 
+The Accelerometer can be configured equivalent to the Compass. 
+
+
+## Flight modes
+There are several [flight modes that have different characteristics](https://ardupilot.org/plane/docs/flight-modes.html). However, since my control skills are quite limited and I do not want to rely on them, I have selected the following three modes: `STABILIZE`, `FBWA` and `Guided`.
+
+| Mode   |      Roll      |  Pitch | Throttle | GPS | Need TX | Summary |
+|----------|:-------------:|------:|:-------------:|------:|------:|------:|
+|... |
+| STABILIZE | + | + |  - |   |  Y | Wing-leveling on stick release |
+| FBWA | s | s |  - |   |  Y | Wing-leveling on stick release |
+| GUIDED | A | A |  A | Y  |   | Wing-leveling on stick release |
+|...|
+
+| Symbol	 | Definition |
+|------:|------:|
+|- |	Full manual control of flight surfaces |
+| +|	Manual control with stabilized limits or assistance|
+|s |	Stabilized control with limits|
+|A |	Automatic control|
+
+I was not exactly sure if the `STABILIZE` was already enough for me or if I should use `FBWA` directly. I decided for `STABILIZE` to have on the one hand the security to be 
+to have the security of being rescued by Ardupilot in case of errors and to be able to intervene in case of misconfigurations. However, the test flight showed that I should rather have chosen `MANUAL`. 
+
+## Test Flight
+Flight Mode : `STABILIZE` <br/>
+RC connected : done <br/>
+Compass calibrated: done <br/>
+GPS: 6 Satelites<br/>
+Telemetry: >95% <br/>
+Wind: **A little too much, but I can not wait for less** <br/>
+
+The propulsion from the engine is definitely enough for takeoff and accelerates the plane sufficiently. After I lightly applied the elevator, the duck rose almost vertically. A correction by operating the elevator leads almost to a nosedive. The whole thing then started all over again until I finally managed to bring the airplane down in a half crash landing that destroyed the landing gear. 
+
+### Troubleshooting 
+It was pretty obvious, and I, have also seen it before, that the elevator was probably not working quite right. 
+When you pitch the plane back in stabilized mode, the elevator is corrected in the wrong direction and instead of lowering the nose again, it just pulls up harder. This caused the parabolic flight. The RC control was configured correctly. 
+
+### Solution
+I simply inverted both the throttle and the PWM output, so that the controller now countersteers correctly.
+
