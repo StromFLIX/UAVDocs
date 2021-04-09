@@ -13,15 +13,27 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 0 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  height:95vh;
+  padding: 2rem; 
+  background: url("../../static/img/panorama_plane_filtered.jpg") no-repeat center;
+  background-size: 140%;
+  background-position: -350px -150px; 
+   
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 0 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height:95vh;
+    padding: 2rem; 
+    background: url("../../static/img/panorama_plane_filtered.jpg") no-repeat center;
   }
 }
 
@@ -41,4 +53,9 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.backgroundImage {
+  height: 100px;
+  width: 100px;
 }
