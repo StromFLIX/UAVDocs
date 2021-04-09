@@ -9,7 +9,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Project Duck',
-  tagline: 'Something between a technical, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.',
+  tagline: 'Something between an artificial, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.',
   url: 'https://your-docusaurus-test-site.com',
   //src: "img/duck_logo.png",
   baseUrl: '/',
@@ -33,7 +33,7 @@ module.exports = {
           position: 'left',
         },
         //{ to: 'blog', label: 'Blog', position: 'left' },
-        { to: 'aboutme', label: 'About Me', position: 'left' },
+        { to: 'aboutme', activeBasePath: 'aboutme', label: 'About Me', position: 'left' },
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/ArzelaAscoIi/UAVDocs',
