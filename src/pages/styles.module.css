@@ -59,3 +59,26 @@
   height: 100px;
   width: 100px;
 }
+
+.imgMe {
+  height:200px;
+  filter: grayscale(100%);
+}
+
+.aboutMeContainer{
+  width: 100%;
+  padding: 250px 20% ;
+  height:65vh;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.aboutMeContainerElement{
+
+}
+
+.logoImage {
+  width: 100px;
+  height: 100px;
+}

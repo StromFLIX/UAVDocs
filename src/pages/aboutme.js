@@ -8,6 +8,11 @@
  */
 
 import React from 'react';
+
+import { makeStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
+import Grid from "@material-ui/core/Grid"
+
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -17,30 +22,31 @@ import styles from './styles.module.css';
 
 
 export default function Home() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+
   return (
     <Layout
-      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header  >
-        <div className="container">
-          asdf
-
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--primary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Learn more
-            </Link>
-          </div>
-        </div>
+      <header >
       </header>
       <main>
 
+        <div className={styles.aboutMeContainer} >
+          <div className={styles.aboutMeContainerElement}>
+            <a href="https://www.linkedin.com/in/kgherr">
+              <img className={styles.logoImage} src={"img/logos/linkedin-brands.svg"} />
+            </a>
+          </div>
+          <div className={styles.aboutMeContainerElement}>
+            <a href="https://github.com/ArzelaAscoIi">
+              <img className={styles.logoImage} src={"img/logos/github-brands.svg"} />
+            </a>
+          </div>
+          <div className={styles.aboutMeContainerElement}>
+            <a href="https://instagram.com/k_hermn">
+              <img className={styles.logoImage} src={"img/logos/instagram-brands.svg"} />
+            </a>
+          </div>
+        </div>
       </main>
     </Layout >
   );

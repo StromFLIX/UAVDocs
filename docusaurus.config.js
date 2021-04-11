@@ -33,7 +33,7 @@ module.exports = {
           position: 'left',
         },
         //{ to: 'blog', label: 'Blog', position: 'left' },
-        { to: 'aboutme', activeBasePath: 'aboutme', label: 'About Me', position: 'left' },
+        { to: 'aboutme', activeBasePath: 'aboutme', label: 'Contact', position: 'left' },
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/ArzelaAscoIi/UAVDocs',
@@ -65,10 +65,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/ArzelaAscoIi',
