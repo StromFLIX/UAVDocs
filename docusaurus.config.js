@@ -11,7 +11,7 @@ module.exports = {
   title: 'Project Duck',
   tagline: 'Something between an artificial, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.',
   url: 'https://arzelaascoii.github.io',
-  baseUrl: '/',
+  baseUrl: '/UAVDocs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
