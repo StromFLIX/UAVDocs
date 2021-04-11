@@ -55,10 +55,7 @@ module.exports = {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/in/kgherr/',
             },
-            {
-              label: 'Discord',
-              href: '/asdfa',
-            },
+
           ],
         },
         {
