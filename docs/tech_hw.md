@@ -5,20 +5,20 @@ title: Setup
 
 The core of the technical hardware is a Raspberry Pi with a Navio2 shield. I have used the installation instructions from the manufacturer (Emlid) to connect the Emfünger, the servos and the motor. The power supply is provided by Emlid. All in all the following components were installed:
 
-Control system:
+**Control system:**
 1. Navio2
 2. Raspberry Pi
-3. 0g Servos (5x)
-4. motor: Tunrigy 1400KV
+3. 9g Servos (5x)
+4. Motor: Tunrigy 1400KV
 5. ESC: 45a
 6. GPS antenna
-7. power module (Navio2)
-8. telemetry
+7. Power module (Navio2)
+8. Telemetry
 10. 2200mAh Turnigy Lipo
 11. receiver Turnigy 9x 
 12. channel to SBUS adapter
 
-FPV:
+**FPV:**
 1. FPV camera
 2. 25mw 5.8gHz transmitter
 
