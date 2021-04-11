@@ -10,8 +10,7 @@
 module.exports = {
   title: 'Project Duck',
   tagline: 'Something between an artificial, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.',
-  url: 'https://your-docusaurus-test-site.com',
-  //src: "img/duck_logo.png",
+  url: 'https://arzelaascoii.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
