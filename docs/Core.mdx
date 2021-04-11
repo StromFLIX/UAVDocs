@@ -9,7 +9,7 @@ slug: /
 import panorama_plane from '@site/static/img/panorama_plane_cropped.jpg';
 
 <div>
-<img src={panorama_plane} alt="Image alt"  />
+<img src={panorama_plane}  />
 </div>
 
 This chapter deals with the construction of the core of the aircraft and will include the materials used as well as the construction of the wings and tail surfaces.
@@ -17,22 +17,49 @@ This chapter deals with the construction of the core of the aircraft and will in
 ## Material
 The core of the aircraft consists of
 1. [XPS foam boards](https://www.amazon.de/Styrodurplatten-St%C3%A4rke-Breite-L%C3%A4nge-Modellbauplatten/dp/B08NXGNQH7/ref=sr_1_4?dchild=1&keywords=XPS-Platten&qid=1617616486&s=diy&sr=1-4),
-2. Hot glue,
-3. Wooden skewers,
-4. [Aluminium bar](https://github.github.com/gfm/),
-5. wire,
+2. [Hot glue](https://www.obi.de/kleber/pattex-heisskleber-hot-sticks-transparent-200-g-11-mm/p/1687359)
+3. [Wooden skewers](https://www.amazon.de/Metaltex-570130-Schaschlikspie%C3%9Fe-100-st%C3%BCck/dp/B009V0P85C/ref=sr_1_5?dchild=1&keywords=schaschlikspie%C3%9Fe+holz&qid=1618144727&sr=8-5)
+4. Aluminium bar (2cm x 2cm x 200cm)
+5. wire
 6. tape.
 
-The core of the aircraft, i.e. the fuselage, wings, rudders and tail units, are largely made of [XPS](https://de.wikipedia.org/wiki/Polystyrol#Extrudiertes%20Polystyrol). This material should ensure sufficient stability. At the same time, the weight of the panels is very low.
-In addition to the pure XPS, I laminated the outward-facing side with standard adhesive tape. This creates additional stability of the aircraft. After a few attempts to foil the already installed parts, I decided to foil the entire panels before I cut out the shapes, because it is much cleaner to work that way. 
-I used hot glue and standard wooden skewers to glue the cut elements together. However, care must be taken that the hot glue can melt the xps panels if the temperature is too high.
+The core of the aircraft (fuselage, wings, rudders and tail), are made of [XPS](https://de.wikipedia.org/wiki/Polystyrol#Extrudiertes%20Polystyrol). 
+This material is lightweight and ensures sufficient stability. In addition to the pure XPS, I laminated the outward-facing side with standard adhesive tape. 
+This creates additional stability of the aircraft. After a few attempts to foil the already installed parts, I decided to foil the entire panels before I cut out the shapes.
+It is easy to add the tape to a flat surface, than already shaped objects.
+I used hot glue and standard wooden skewers to connect the cut elements together.
+However, care must be taken that the hot glue can melt the xps panels if the temperature is too high. 
+Lowering the temperature or turning of the hot glue gun helped me not burn the material.
 
 ## Parts and Layout
-The fuselage and the tail unit I have built almost only by feel. The shape of the wings, however, must be well planned, since they provide the lift and are therefore almost the most important part of the body shell. 
+I built most of the parts only by feel. 
+The shape of the wings, must be well planned, since they provide the lift and are therefore an important part of the body shell. 
 ![Basic Built](/img/layout.jpg)
 
+### Wings
+I used [this](https://www.youtube.com/watch?v=h_RzXO5u3M0) youtube video to build the wings. However, I built them much larger because I intend to have a higher payload. I decided on a width of 30 cm and a correspondingly larger width of the top of the wing.
+
+I just trimmed the dotted lines slightly and removed some material, creating a rounded shape when folding the wings. 
+The shape of the wing should be visible in the next picture. I have inserted a 2.5 cm wide XPS strut contrary to the Youtube video.
+![WIng](/img/wing.jpg)
+
+The connection between fuselage and wings was provided by an aluminum rod that went through almost the entire length of the wings. Since the rod filled the entire height of the wings, I made holes in the wings from above with a small screwdriver and filled them with plenty of hot glue. You have to be careful here that you make the hole exactly above the rod. You can tell that you have made the right hole by the scratching of the screwdriver on the aluminum. After about 5 holes per wing, the wings were fixed. Another layer of tape smoothed out any unevenness caused by the hot glue.
+
+I simply cut the flaps diagonally on one side and taped them in place. To make the rudders moveable by servos, I cut a cable tie in two parts. About 2,5cm and 1,5cm. The longer piece I have provided at the upper end with a small och for the control wire. I cut the rudder about 20cm from the fuselage in parallel, applied hot glue and glued the two pieces of cable tie in a triangle shape. About 15cm away from the wing I cut a 1x2,5 cm wide hole for the servo. As connection I simply took a wire and led it through a small plastic tube, so that also force can be exerted when pressing the rudder.
+
+import flaps_roll from '@site/static/img/flaps_roll.jpg';
+
+<div align="center">
+<img src={flaps_roll} alt="Image alt" height="600px"  />
+</div>
+
 ### Fuselage
-To build the fuselage, I cut out the three middle elements from XPS. Since my panels were only one meter long, I had to glue two panels together. For this I used hot glue and wooden sticks again. on both sides of the fuselage I cut out a 2 cm square about 50 cm from the nose. This hole should later serve as an attachment for a wooden rod that connects the wings to the fuselage. 
+To build the fuselage, I cut out the three middle elements from XPS. Since my panels were only one meter long, I had to glue two panels together. 
+I used hot glue and wooden sticks to connect the two elements.
+
+On both sides of the fuselage I cut out a 2 cm square about 50 cm from the nose. 
+This hole should later serve as an attachment for a wooden rod that connects the wings to the fuselage. 
+
 
 However, the raw material wood turns out not to be a good choice, since the elasticity of the wood is much too great. As soon as the airplane is pulled upward, the wings bend upward and offer the air a much larger attack surface. Instead of a smooth climb, the plane simply bounces up and down as you use the elevator.
 
@@ -54,22 +81,6 @@ import upper_fuselage from '@site/static/img/upper_fuselage.jpg';
 </div>
 
 
-### Wings
-I used [this](https://www.youtube.com/watch?v=h_RzXO5u3M0) youtube video to build the wings. However, I built them much larger because I intend to have a higher payload. I decided on a width of 30 cm and a correspondingly larger width of the top of the wing.
-
-I just trimmed the dotted lines slightly and removed some material, creating a rounded shape when folding the wings. 
-The shape of the wing should be visible in the next picture. I have inserted a 2.5 cm wide XPS strut contrary to the Youtube video.
-![WIng](/img/wing.jpg)
-
-The connection between fuselage and wings was provided by an aluminum rod that went through almost the entire length of the wings. Since the rod filled the entire height of the wings, I made holes in the wings from above with a small screwdriver and filled them with plenty of hot glue. You have to be careful here that you make the hole exactly above the rod. You can tell that you have made the right hole by the scratching of the screwdriver on the aluminum. After about 5 holes per wing, the wings were fixed. Another layer of tape smoothed out any unevenness caused by the hot glue.
-
-I simply cut the flaps diagonally on one side and taped them in place. To make the rudders moveable by servos, I cut a cable tie in two parts. About 2,5cm and 1,5cm. The longer piece I have provided at the upper end with a small och for the control wire. I cut the rudder about 20cm from the fuselage in parallel, applied hot glue and glued the two pieces of cable tie in a triangle shape. About 15cm away from the wing I cut a 1x2,5 cm wide hole for the servo. As connection I simply took a wire and led it through a small plastic tube, so that also force can be exerted when pressing the rudder.
-
-import flaps_roll from '@site/static/img/flaps_roll.jpg';
-
-<div align="center">
-<img src={flaps_roll} alt="Image alt" height="600px"  />
-</div>
 
 ### Tail
 
