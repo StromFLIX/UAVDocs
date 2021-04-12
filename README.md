@@ -2,6 +2,8 @@
 
 <p align="center" >
     <img src="static/img/repo_logo.png" width="50%">
+</p>
+<p align="center" >
     Something between an artificial, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.
 </p>
 <p align="center">
