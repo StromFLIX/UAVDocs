@@ -18,6 +18,11 @@ module.exports = {
   organizationName: 'ArzelaAscoIi', // Usually your GitHub org/user name.
   projectName: 'UAVDocs', // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: 'v1-new-domain',
+      content:
+        '❗ This is a WIP. Please do not be too strict 🤗 ❗',
+    },
     navbar: {
       title: 'Duck',
       logo: {
