@@ -1,16 +1,16 @@
 
 
 <p align="center" >
-  <img src="static/img/repo_logo.png" width="50%">
-</p>
-<p align="center">
+    <img src="static/img/repo_logo.png" width="50%">
     Something between an artificial, infinitely flying duck living in the wild and an ostrich ramming its head into the ground.
 </p>
 <p align="center">
   <a href="https://github.com/ArzelaAscoIi/UAVDocs/actions/workflows/deploy.yaml" style="text-decoration:none;"><img src="https://github.com/ArzelaAscoIi/UAVDocs/actions/workflows/deploy.yaml/badge.svg" alt="documentation"></a>
 </p>
 
-# Motivation
+
+
+Visit: https://arzelaascoii.github.io/UAVDocs/
 
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
