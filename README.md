@@ -10,10 +10,9 @@
   <a href="https://github.com/ArzelaAscoIi/UAVDocs/actions/workflows/deploy.yaml" style="text-decoration:none;"><img src="https://github.com/ArzelaAscoIi/UAVDocs/actions/workflows/deploy.yaml/badge.svg" alt="documentation"></a>
 </p>
 
-
-
+---
 Visit: https://arzelaascoii.github.io/UAVDocs/
-
+---
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
