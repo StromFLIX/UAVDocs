@@ -11,6 +11,7 @@ module.exports = {
   someSidebar: {
     Built: ['core', 'gear', 'drive'],
     Tech: ['techhw', 'techconfig'],
-    Solar: [],
+    Solar: []
   },
 };
+

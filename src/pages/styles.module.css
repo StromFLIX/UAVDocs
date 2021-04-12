@@ -12,7 +12,7 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 0 0;
   text-align: center;
   padding: 2rem; 
@@ -20,6 +20,18 @@
   background: url("../../static/img/panorama_plane_filtered.jpg") no-repeat center;
   background-size: cover;
 }
+
+@media only screen and (max-width: 600px) {
+  .heroBanner {
+    padding: 0 0;
+    text-align: center;
+    padding: 2rem; 
+    height: 95vh;
+    background: url("../../static/img/plane_mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
 
 .buttons {
   display: flex;
