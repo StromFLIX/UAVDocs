@@ -1,12 +1,17 @@
 
 
-# Website
+<p align="center" >
+  <img src="static/img/repo_logo.png" width="70%">
+</p>
+
 [![documentation](https://github.com/ArzelaAscoIi/UAVDocs/actions/workflows/deploy.yaml/badge.svg)](https://github.com/ArzelaAscoIi/UAVDocs/actions/workflows/deploy.yaml)
+
+# Motivation
+
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
 ### Installation
-
 ```
 $ yarn
 ```
